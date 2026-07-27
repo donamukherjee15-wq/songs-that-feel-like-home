@@ -20,15 +20,26 @@ document.getElementById("begin").addEventListener("click", () => {
 showScreen("gift"); 
 });
 
-// Gift Opening Animation
+/* ==========================
+   NEW GIFT REVEAL
+========================== */
 
+const giftWrapper = document.querySelector(".gift-wrapper");
 const giftBox = document.querySelector(".gift-box");
+const playGift = document.getElementById("playGift");
 
 giftBox.addEventListener("click", () => {
 
-    if (giftBox.classList.contains("open")) return;
+    if(giftWrapper.classList.contains("open")) return;
 
+    giftWrapper.classList.add("open");
     giftBox.classList.add("open");
+
+});
+
+playGift.addEventListener("click", () => {
+
+    showScreen("letter");
 
 });
 
