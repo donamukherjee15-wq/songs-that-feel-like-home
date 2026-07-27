@@ -135,6 +135,8 @@ position:absolute;
 
 bottom:0;
 
+overflow:visible;
+
 }
 
 .gift-lid{
@@ -497,8 +499,8 @@ transform:scale(1.2) rotate(8deg);
 /* Hidden Cassette */
 
 .gift-body{
-overflow:hidden;
 position:relative;
+overflow:visible;
 }
 
 .gift-cassette{
@@ -594,6 +596,6 @@ flex-shrink:0;
 
 .gift-box.open .gift-cassette{
 
-bottom:18px;
+bottom:55px;
 
 }
