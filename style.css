@@ -494,3 +494,98 @@ transform:scale(1.2) rotate(8deg);
 }
 
 }
+/* Hidden Cassette */
+
+.gift-body{
+overflow:hidden;
+position:relative;
+}
+
+.gift-cassette{
+
+position:absolute;
+
+left:50%;
+bottom:-240px;
+
+transform:translateX(-50%);
+
+width:145px;
+
+padding:12px;
+
+background:white;
+
+border-radius:14px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.18);
+
+text-align:center;
+
+transition:1s ease;
+
+z-index:2;
+
+}
+
+.gift-cassette h3{
+
+font-size:14px;
+
+margin-bottom:8px;
+
+font-family:'Cormorant Garamond',serif;
+
+}
+
+.gift-cassette p{
+
+font-size:11px;
+
+line-height:1.4;
+
+margin-bottom:10px;
+
+}
+
+.gift-cassette button{
+
+padding:8px 12px;
+
+font-size:12px;
+
+}
+
+.reel{
+
+position:absolute;
+
+width:24px;
+
+height:24px;
+
+border:3px solid #314A63;
+
+border-radius:50%;
+
+top:14px;
+
+}
+
+.left{
+
+left:12px;
+
+}
+
+.right{
+
+right:12px;
+
+}
+
+.gift-box.open .gift-cassette{
+
+bottom:18px;
+
+}
