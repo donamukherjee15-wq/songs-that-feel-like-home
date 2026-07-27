@@ -20,9 +20,22 @@ document.getElementById("begin").addEventListener("click", () => {
 showScreen("gift"); 
 });
 
-// Gift → Cassette 
-document.querySelector(".gift-box").addEventListener("click", () => { 
-showScreen("cassette"); 
+// Gift → Cassette (Animated)
+
+const giftBox = document.querySelector(".gift-box");
+
+giftBox.addEventListener("click", () => {
+
+    // Prevent multiple taps
+    if (giftBox.classList.contains("open")) return;
+
+    giftBox.classList.add("open");
+
+    // Wait for animation to finish
+    setTimeout(() => {
+        showScreen("cassette");
+    }, 1200);
+
 });
 
 // Cassette → Letter 
