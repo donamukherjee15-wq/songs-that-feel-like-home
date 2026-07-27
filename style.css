@@ -448,3 +448,49 @@ transform:scale(1);
 }
 
 }
+/* Sparkles */
+
+.sparkle{
+position:absolute;
+font-size:28px;
+opacity:0;
+transition:.4s;
+pointer-events:none;
+}
+
+.sparkle1{
+top:-25px;
+left:-20px;
+}
+
+.sparkle2{
+top:-30px;
+right:-15px;
+}
+
+.sparkle3{
+bottom:35px;
+left:-25px;
+}
+
+.sparkle4{
+bottom:20px;
+right:-20px;
+}
+
+.gift-box.open .sparkle{
+opacity:1;
+animation:sparklePop 1s ease infinite alternate;
+}
+
+@keyframes sparklePop{
+
+from{
+transform:scale(.8) rotate(-8deg);
+}
+
+to{
+transform:scale(1.2) rotate(8deg);
+}
+
+}
